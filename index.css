@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.calc-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: rgb(247, 247, 247);
+}
+.button{
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0rem 0.2rem;
+    border: none;
+    cursor: pointer;
+}
+.calc-body .input-display{
+    width: 100%;
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    padding: 1rem;
+    width: 100%;
+    text-align: end;
+    font-size: xx-large;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: rgb(247, 247, 247);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem 0rem;
+    width: 100%;
+}
+.buttons .button{
+    width: 20%;
+    height: 3rem;
+    font-size: large;
+}
+.button{
+    background-color: rgb(243, 243, 243);  
+}
+.button:hover{
+    background-color: rgb(121, 169, 215);
+}
+.deg{
+    padding: 0.1rem 0rem;
+    width: 100%;
+}
+.deg .button{
+    width: 20%;
+    height: 3rem;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(247, 247, 247);
+}
+.deg .button:hover{
+    background-color: rgb(121, 169, 215);
+}
+.M-function button{
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(247, 247, 247);
+
+}
+.trigo{
+    width: 100%;
+    padding: 0.1rem 0rem;
+}
+.trigo .button{
+    width: 30%;
+    height: 3rem;
+    margin-right: 0px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: rgb(247, 247, 247);
+    padding-left: 1rem;
+}
+.f-symbol .button{
+    padding-left: 0rem !important;
+}
+.trigo .button:hover{
+    background-color: rgb(121, 169, 215);
+}
+.number{
+    background-color: white;
+    font-size: x-large !important;
+    font-weight: bold;
+}
+.triangle .f-symbol{
+    font-size: larger !important;
+}
+.dot{
+    font-weight: bold;
+}
+#add, #subtract, #multiply, #divide, #equal{
+    font-weight: bold;
+    font-size: large;
+}
+@media only screen and (max-width: 450px) {
+    .calc-body{
+        width: 90% !important;
+    }
+    .trigo .button{
+        padding-left: 1rem !important;
+        width: 40% !important;
+        font-size: 0.9rem;
+        
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .calc-body{
+        width: 50%;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .trigo .button{
+        text-align: start;
+        width: 40%;
+        font-size: 0.9rem;
+    }
+  }
